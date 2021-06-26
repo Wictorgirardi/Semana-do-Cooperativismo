@@ -48,7 +48,6 @@ for (var i = 0; i < btns.length; i++) {
 }
 
 window.onload = function () {
-  alert("Hi");
   var userImage = document.getElementById("all");
   userImage.onclick = function () {
     hangoutButton.click(); // this will trigger the click event
