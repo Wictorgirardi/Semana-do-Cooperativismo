@@ -188,6 +188,14 @@ a:hover {
   .padding-Mobile {
     padding-top: 50px !important;
   }
+  .btn-size {
+    width: 100% !important;
+  }
+  .cardMobile {
+    width: 84% !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
   .noShow {
     display: none;
   }
@@ -271,7 +279,7 @@ a:hover {
 
 .filterDiv {
   width: 100%;
-  
+
   display: none; /* Hidden by default */
 }
 
@@ -2634,6 +2642,5 @@ a {
 .cd-article-link:hover {
   opacity: 0.8;
 }
-
 
 /*# sourceMappingURL=maps/style.css.map */

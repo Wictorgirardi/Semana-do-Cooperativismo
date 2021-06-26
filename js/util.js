@@ -1,4 +1,12 @@
-
+function clickAndFilter() {
+  window.location.href = "evento.html";
+  setTimeout(function () {
+    if (newState == -1) {
+      document.getElementById("Educativa").click();
+    }
+  }, 5000);
+ 
+}
 filterSelection("all");
 function filterSelection(c) {
   var x, i;

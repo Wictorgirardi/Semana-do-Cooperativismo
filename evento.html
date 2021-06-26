@@ -177,7 +177,7 @@ Fixed Navigation
           <h1 class="header2-Mobile" style="color: #C6D302; font-weight: 900;font-size: 48px;">Programação:</h1>
             <h2 class="subheader-Mobile"style="color: #C6D302; font-weight: 400; padding-bottom: 2%">Cada dia da Semana do Cooperativismo<br/> tem um tema principal, sendo eles:
             </h2>
-            <div id="myBtnContainer" class="noShow" style="text-align: left;">
+            <div id="myBtnContainer" class="noShow" style="text-align: center;">
               <a
               id="allButton"
               onclick="filterSelection('all')" 
@@ -192,6 +192,7 @@ Fixed Navigation
               >Filantrópicas</a
             >
               <a
+              id="Educativa"
               onclick="filterSelection('Educativa')"
               style="background-color: #00ae9d; margin: 10px;"
               class="btn btn-main"
@@ -221,6 +222,7 @@ Fixed Navigation
             >
             
               <a
+              id="Educativa"
               onclick="filterSelection('Educativa')"
               style="background-color: #00ae9d; margin: 5px;width: 160px;"
               class="btn btn-main"
@@ -246,13 +248,38 @@ Fixed Navigation
       >
             </div>
         </div>
-        <div class="row mt-2 mb-2">
+
+<div class="row text-center" style="margin: auto;">
+  <a class="btn btn-primary m-1 btn-size" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: #7CB61D; border: 0px solid; width: 150px;">
+    Segunda-Feira
+  </a>
+  <a class="btn btn-primary m-1 btn-size" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: #7CB61D; border: 0px solid; width: 150px;">
+    Terça-Feira
+  </a>
+  <a class="btn btn-primary m-1 btn-size" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: #7CB61D; border: 0px solid; width: 150px;">
+    Quarta-Feira
+  </a>
+  <a class="btn btn-primary m-1 btn-size" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: #7CB61D; border: 0px solid; width: 150px;">
+    Quinta-Feira
+  </a>
+  <a class="btn btn-primary m-1 btn-size" data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: #7CB61D; border: 0px solid; width: 150px;">
+    Sexta-Feira
+  </a>
+  <a class="btn btn-primary m-1 btn-size" data-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: #7CB61D; border: 0px solid; width: 150px;">
+    Sábado
+  </a>
+  <a class="btn btn-primary m-1 btn-size" data-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: #7CB61D; border: 0px solid; width: 150px;">
+    Domingo
+  </a>
+  <a class="btn btn-primary m-1 btn-size" data-toggle="collapse" href="#collapseExample8" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: #00ae9d; border: 0px solid; width: 150px;">
+    Recorrentes
+  </a>
+</div>
+<div class="row"> 
+  <div class="row mt-2 mb-2">
           <div class="col-12">
-            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: #7CB61D; border: 0px solid; width: 150px;">
-              Segunda-Feira
-            </a>
             <div class="collapse" id="collapseExample">
-              <div class="card card-body" style="width: 100%;">
+              <div class="card card-body cardMobile" style="width: 100%;">
               <div class="row">
                 <div class="col-lg-4 col-xs-4 col-md-4 col-sm-12 filterDiv Filantrópica">
                   <div class="cardEvento">
@@ -266,7 +293,7 @@ Fixed Navigation
                   <h4 class="headerEvento">O que é Cooperativismo? Aprenda com o SICOOB CREDIMINAS</h4>
                   <h6 class="centralEvento">1003 - SICOOB CREDIMINAS</h6>
                   <p>A voluntária transformadora e colaboradora do Sicoob Credivag irá apresentar a história, os conceitos e a finalidade do Cooperativismo por meio de vídeos no Instagram deles.</p>
-                  <h6 class="centralEvento">https://www.instagram.com/sicoobcredivag</h6>
+                  <a href="https://www.instagram.com/sicoobcredivag" target="_blank" class="centralEvento">https://www.instagram.com/sicoobcredivag</a>
                 </div>
               </div>
                 <div class="col-lg-4 col-xs-4 col-md-4 col-sm-12 filterDiv Educativa Adultos">
@@ -276,7 +303,7 @@ Fixed Navigation
                   <h6 class="centralEvento">19:00h</h6>
                   <p>O SICOOB UNICOOB apresentará noções sobre o Empreendimento Cooperativo, a história, os valores e princípios os ramos do cooperativismo com ênfase no cooperativismo de crédito.
                     Essa é uma ação feita em parceria com a Universidade da Amazônia - UNAMA | Unidade Castanhal</p>
-                    <h6 class="centralEvento">https://meet.google.com/zvn-dusr-fvg</h6>
+                    <a href="https://meet.google.com/zvn-dusr-fvg" target="_blank" class="centralEvento">https://meet.google.com/zvn-dusr-fvg</a>
                   </div>
               </div>
               <div class="col-lg-4 col-xs-4 col-md-4 col-sm-12 filterDiv Educativa mt-2">
@@ -301,11 +328,8 @@ Fixed Navigation
         </div>
         <div class="row mt-2 mb-2">
           <div class="col-12">
-            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: #7CB61D; border: 0px solid; width: 150px;">
-              Terça-Feira
-            </a>
             <div class="collapse" id="collapseExample2">
-              <div class="card card-body" style="width: 100%;">
+              <div class="card card-body cardMobile" style="width: 100%;">
                 <div class="row">
                   <div class="col-lg-4 col-xs-4 col-md-4 col-sm-12 filterDiv Educativa">
                     <div class="cardEvento">
@@ -313,7 +337,7 @@ Fixed Navigation
                       <h6 class="centralEvento">9:00h</h6>
                       <h6 class="centralEvento">1003 - SICOOB CREDIMINAS</h6>
                       <p>A voluntária transformadora, Colaboradora do Sicoob Credivag irá apresentar os princípios e ramos do cooperativismo.</p>
-                      <h6 class="centralEvento">https://www.instagram.com/sicoobcredivag/</h6>
+                      <a href="https://www.instagram.com/sicoobcredivag/" target="_blank" class="centralEvento">https://www.instagram.com/sicoobcredivag/</a>
                     </div>
                   </div>
                   <div class="col-lg-4 col-xs-4 col-md-4 col-sm-12 filterDiv Educativa ">
@@ -322,7 +346,7 @@ Fixed Navigation
                     <h6 class="centralEvento">10:00h</h6>
                     <h6 class="centralEvento">2001 - SICOOB PLANALTO CENTRAL</h6>
                     <p>Produção de conteúdo abordando temas vinculados ao cooperativismo.</p>
-                    <h6 class="centralEvento">https://www.instagram.com/sicoobcooperplan/</h6>
+                    <a href="https://www.instagram.com/sicoobcooperplan/" target="_blank" class="centralEvento">https://www.instagram.com/sicoobcooperplan/</a>
                   </div>
                 </div>
                   <div class="col-lg-4 col-xs-4 col-md-4 col-sm-12 filterDiv Educativa">
@@ -332,7 +356,7 @@ Fixed Navigation
                     <h6 class="centralEvento">2003 - SICOOB CECREMGE</h6>
                     <p>O SICOOB UNICOOB apresentará noções sobre o Empreendimento Cooperativo, a história, os valores e princípios os ramos do cooperativismo com ênfase no cooperativismo de crédito.
                       Essa é uma ação feita em parceria com a Universidade da Amazônia - UNAMA | Unidade Castanhal</p>
-                      <h6 class="centralEvento">https://www.youtube.com/watch?v=GFzOR8Aes-s</h6>
+                      <a href="https://www.youtube.com/watch?v=GFzOR8Aes-s" target="_blank" class="centralEvento">https://www.youtube.com/watch?v=GFzOR8Aes-s</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-xs-4 col-md-4 col-sm-12 filterDiv Educativa mt-2">
@@ -341,7 +365,7 @@ Fixed Navigation
                     <h6 class="centralEvento">19:00h horário de Cuiabá/MT</h6>
                     <h6 class="centralEvento">2008 - SICOOB RONDON</h6>
                     <p>Será uma live, feita em intercooperação com a Central Rondon e Sicoob Integração. No Instagram do SICOOB RONDON a semana vai iniciar com eles falando sobre o cooperativismo em um contexto bem geral</p>
-                    <h6 class="centralEvento">https://www.instagram.com/sicoobuniaomtms</h6>
+                    <a href="https://www.instagram.com/sicoobuniaomtms" target="_blank" class="centralEvento">https://www.instagram.com/sicoobuniaomtms</a>
                   </div>
                 </div>
                 <div class="col-lg-4 col-xs-4 col-md-4 col-sm-12 filterDiv Educativa Crianças mt-2">
@@ -358,7 +382,7 @@ Fixed Navigation
                     <h6 class="centralEvento">13h às 20h</h6>
                     <h6 class="centralEvento">2009 - SICOOB UNICOOB</h6>
                     <p>Apresentar noções do empreendimento cooperativo (História, Valores e Princípios, Ramos do Cooperativismo com ênfase no ramo crédito).</p>
-                    <h6 class="centralEvento">https://www.cooperemb.com.br/inscricoes-clinica-financeiro</h6>
+                    <a href="ttps://www.cooperemb.com.br/inscricoes-clinica-financeiro" target="_blank"  class="centralEvento">https://www.cooperemb.com.br/inscricoes-clinica-financeiro</a>
                   </div>
                 </div>
                 <div class="col-lg-4 col-xs-4 col-md-4 col-sm-12 filterDiv Educativa mt-2">
@@ -375,11 +399,8 @@ Fixed Navigation
         </div>
         <div class="row mt-2 mb-2">
           <div class="col-12">
-            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: #7CB61D; border: 0px solid; width: 150px;">
-              Quarta-Feira
-            </a>
             <div class="collapse" id="collapseExample3">
-              <div class="card card-body" style="width: 100%;">
+              <div class="card card-body cardMobile" style="width: 100%;">
                 <div class="row">
                   <div class="col-lg-4 col-xs-4 col-md-4 col-sm-12 filterDiv Filantrópicas">
                     <div class="cardEvento">
@@ -395,7 +416,7 @@ Fixed Navigation
                     <h6 class="centralEvento">09:00h</h6>
                     <h6 class="centralEvento">1003 - SICOOB CREDIMINAS</h6>
                     <p>A diretora de negócios, Cristiane Souza Silveira irá apresentar pontos importantes sobre as cooperativas de crédito.</p>
-                    <h6 class="centralEvento">https://www.instagram.com/sicoobcredivag/</h6>
+                    <a href="https://www.instagram.com/sicoobcredivag/" target="_blank" class="centralEvento">https://www.instagram.com/sicoobcredivag/</a>
                   </div>
                 </div>
                   <div class="col-lg-4 col-xs-4 col-md-4 col-sm-12 filterDiv Educativa Adultos">
@@ -412,7 +433,7 @@ Fixed Navigation
                     <h6 class="centralEvento">19:00h de Cuiabá-MT</h6>
                     <h6 class="centralEvento">2008 - SICOOB RONDON</h6>
                     <p>Bate papo sobre o ramo crédito dentro do cooperativismo.</p>
-                    <h6 class="centralEvento">https://www.instagram.com/sicoobprimavera.oficial/  e https://www.instagram.com/sicoobuniaomtms/ </h6>
+                    <a href="https://www.instagram.com/sicoobprimavera.oficial/ " target="_blank" class="centralEvento">https://www.instagram.com/sicoobprimavera.oficial/</a>  e   <a href="https://www.instagram.com/sicoobuniaomtms/ " style="color: #003641;" target="_blank"> https://www.instagram.com/sicoobuniaomtms/ </a>
                   </div>
                 </div>
                 <div class="col-lg-4 col-xs-4 col-md-4 col-sm-12 filterDiv Educativa Adultos mt-2">
@@ -447,11 +468,8 @@ Fixed Navigation
         </div>
         <div class="row mt-2 mb-2">
           <div class="col-12">
-            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: #7CB61D; border: 0px solid; width: 150px;">
-              Quinta-Feira
-            </a>
             <div class="collapse" id="collapseExample4">
-              <div class="card card-body" style="width: 100%;">
+              <div class="card card-body cardMobile" style="width: 100%;">
                 <div class="row">
                   <div class="col-lg-4 col-xs-4 col-md-4 col-sm-12 filterDiv Filantrópica Crianças">
                     <div class="cardEvento">
@@ -490,7 +508,7 @@ Fixed Navigation
                     <h4 class="headerEvento">O poder da cooperação</h4>
                     <h6 class="centralEvento">1003 - SICOOB CREDIMINAS</h6>
                     <p>O Presidente do Sicoob Frutal, Reginaldo Dias Machado irá falar em vídeo sobre o poder da cooperação. O convite é para que toda comunidade participe do movimento "Alimente e Aqueça" ação filantrópica organizada pelo Sicoob Frutal que acontecerá no Dia C.</p>
-                    <h6 class="centralEvento">https://www.instagram.com/sicoobfrutal/</h6>
+                    <a href="https://www.instagram.com/sicoobfrutal/ " target="_blank" class="centralEvento">https://www.instagram.com/sicoobfrutal/</a>
                   </div>
                 </div>
                 <div class="col-lg-4 col-xs-4 col-md-4 col-sm-12 filterDiv Educativa Adultos  mt-2">
@@ -498,7 +516,7 @@ Fixed Navigation
                     <h4 class="headerEvento">Live Intercooperação - Cooperativismo e o Impacto Social: Interesse pela comunidade</h4>
                     <h6 class="centralEvento">2008 - SICOOB RONDON</h6>
                     <p>Qual o impacto que o cooperativismo pode gerar nas comunidades onde está presente?</p>
-                    <h6 class="centralEvento">https://www.instagram.com/sicoobcerradomt/?hl=pt e + https://www.instagram.com/sicoobfronteiras/?hl=pt</h6>
+                    <a href="https://www.instagram.com/sicoobcerradomt/?hl=pt" target="_blank" class="centralEvento">https://www.instagram.com/sicoobcerradomt/?hl=pt e + https://www.instagram.com/sicoobfronteiras/?hl=pt</a>
                   </div>
                 </div>
                 <div class="col-lg-4 col-xs-4 col-md-4 col-sm-12 filterDiv Educativa Adultos  mt-2">
@@ -513,7 +531,7 @@ Fixed Navigation
                     <h4 class="headerEvento">Cooperação é ON!</h4>
                     <h6 class="centralEvento">2009 - SICOOB UNICOOB</h6>
                     <p>Apresentar Noções do Empreendimento Cooperativo (História, Valores e Princípios, Ramos do Cooperativismo com ênfase no ramo crédito)</p>
-                    <h6 class="centralEvento">https://meet.google.com/zvn-dusr-fvg</h6>
+                    <a href="https://meet.google.com/zvn-dusr-fvg" target="_blank" class="centralEvento">https://meet.google.com/zvn-dusr-fvg</a>
                   </div>
                 </div>
                 <div class="col-lg-4 col-xs-4 col-md-4 col-sm-12 filterDiv Educativa Adultos  mt-2">
@@ -521,7 +539,7 @@ Fixed Navigation
                     <h4 class="headerEvento">Live Educação Cooperativa</h4>
                     <h6 class="centralEvento">2013 - SICOOB UNIMAIS</h6>
                     <p>Live sobre Educação Cooperativista para seguidores Instagram.</p>
-                    <h6 class="centralEvento">https://www.instagram.com/cooperemb_/?hl=pt</h6>
+                    <a href="https://www.instagram.com/cooperemb_/?hl=pt" target="_blank" class="centralEvento">https://www.instagram.com/cooperemb_/?hl=pt</a>
                   </div>
                 </div>
                 <div class="col-lg-4 col-xs-4 col-md-4 col-sm-12 filterDiv Educativa Adultos  mt-2">
@@ -536,7 +554,7 @@ Fixed Navigation
                     <h4 class="headerEvento">O cooperativismo e os seus princípios</h4>
                     <h6 class="centralEvento">1003 - SICOOB CREDIMINAS</h6>
                     <p>Públicação no Youtube do vídeo "O Cooperativismo e os seus princípios"</p>
-                    <h6 class="centralEvento">https://youtube.com/chanbel/UCcYKOISPesnbLLhtMIRtoDQ</h6>
+                    <a href="https://youtube.com/chanbel/UCcYKOISPesnbLLhtMIRtoDQ" target="_blank" class="centralEvento">https://youtube.com/chanbel/UCcYKOISPesnbLLhtMIRtoDQ</a>
                   </div>
                 </div>
                 </div>
@@ -546,11 +564,8 @@ Fixed Navigation
         </div>
         <div class="row mt-2 mb-2">
           <div class="col-12">
-            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: #7CB61D; border: 0px solid; width: 150px;">
-              Sexta-Feira
-            </a>
             <div class="collapse" id="collapseExample5">
-              <div class="card card-body" style="width: 100%;">
+              <div class="card card-body cardMobile" style="width: 100%;">
                 <div class="row">
                   <div class="col-lg-4 col-xs-4 col-md-4 col-sm-12 filterDiv Educativa Adultos  ">
                     <div class="cardEvento">
@@ -761,11 +776,8 @@ Fixed Navigation
         </div>
         <div class="row mt-2 mb-2">
           <div class="col-12">
-            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: #7CB61D; border: 0px solid; width: 150px;">
-              Sábado
-            </a>
             <div class="collapse" id="collapseExample6">
-              <div class="card card-body" style="width: 100%;">
+              <div class="card card-body cardMobile" style="width: 100%;">
                 <div class="row">
                   <div class="col-lg-4 col-xs-4 col-md-4 col-sm-12 filterDiv Educativa Adultos">
                     <div class="cardEvento">
@@ -806,7 +818,7 @@ Fixed Navigation
                     <h6 class="centralEvento">10:00h às 17:00h</h6>
                     <h6 class="centralEvento">2009 - SICOOB UNICOOB</h6>
                     <p>Palestra para a comunidade escoteira da cidade de Medianeira sobre cooperativismo e educação financeira.</p>
-                    <h6 class="centralEvento">https://zoom.us/j/96788858565?pwd=OXhZQXR4R1A4Mm9RMmd0d2xidmJhZz09 14h: https://zoom.us/j/97184652169?pwd=ak5Qak5MT2F1ejhSR2hXcEJPajNpUT09</h6>
+                    <a href="https://zoom.us/j/96788858565?pwd=OXhZQXR4R1A4Mm9RMmd0d2xidmJhZz09" target="_blank" class="centralEvento">https://zoom.us/j/96788858565?pwd=OXhZQXR4R1A4Mm9RMmd0d2xidmJhZz09 14h: https://zoom.us/j/97184652169?pwd=ak5Qak5MT2F1ejhSR2hXcEJPajNpUT09</a>
                   </div>
                 </div>
                 <div class="col-lg-4 col-xs-4 col-md-4 col-sm-12 filterDiv Educativa Adultos mt-2">
@@ -976,8 +988,6 @@ Fixed Navigation
                     <p>Arrecadação de alimento para Fundação Médico Assistencial do Trabalhador Rural - Hospital de Santa Leopoldina</p>
                   </div>
                 </div>
-              
-             
                 </div>
                 </div>
             </div>
@@ -985,11 +995,8 @@ Fixed Navigation
         </div>
         <div class="row mt-2 mb-2">
           <div class="col-12">
-            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: #7CB61D; border: 0px solid; width: 150px;">
-              Domingo
-            </a>
             <div class="collapse" id="collapseExample7">
-              <div class="card card-body" style="width: 100%;">
+              <div class="card card-body cardMobile" style="width: 100%;">
                 <div class="row">
                   <div class="col-lg-4 col-xs-4 col-md-4 col-sm-12 Filantrópica filterDiv ">
                     <div class="cardEvento">
@@ -1027,11 +1034,8 @@ Fixed Navigation
         </div>
         <div class="row mt-2 mb-2">
           <div class="col-12">
-            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample8" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: #7CB61D; border: 0px solid; width: 150px;">
-              Recorrentes
-            </a>
             <div class="collapse" id="collapseExample8">
-              <div class="card card-body" style="width: 100%;">
+              <div class="card card-body cardMobile" style="width: 100%;">
                 <div class="row">
                   <div class="col-lg-4 col-xs-4 col-md-4 col-sm-12 filterDiv Educativa Crianças">
                     <div class="cardEvento">
@@ -1324,6 +1328,9 @@ Fixed Navigation
             </div>
           </div>
         </div>
+</div>
+
+      
       </div>
       <!-- End container -->
     </section>
