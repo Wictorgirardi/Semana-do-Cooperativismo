@@ -133,6 +133,7 @@ Fixed Navigation
       Eu concordo
   </button>
 </div>
+<button onclick="topFunction()" id="myBtn" title="up">  <img src="images/up-arrow.png" alt="logo" style="width: 80%;"/></button>
 
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -266,9 +267,11 @@ Fixed Navigation
 
           Uma live com a finalidade de arrecadar recursos para aquisição de cadeiras de rodas, cadeiras de banhos e itens para apoio a pacientes com necessidade de cuidados especiais (pós-covid e outros relacionados)
         </p>
-        <a href="https://www.youtube.com/watch?v=_JuMYYtK2sA" style="color: #003641; font-weight: 500;  margin-bottom: 5%;">
-          https://www.youtube.com/watch?v=_JuMYYtK2sA
-        </a>
+        <div class="text-center"> 
+          <iframe width="80%" height="300" class="yt"
+          src="https://www.youtube.com/embed/_JuMYYtK2sA">
+          </iframe>
+        </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color:#C6D302">Fechar</button>
@@ -315,9 +318,11 @@ Fixed Navigation
         <p style="color: #003641; font-weight: 500;  margin-bottom: 5%;">
           Conta a história de uma pequena comunidade no interior do Brasil, onde a falta de oportunidades de acesso a emprego e renda tornam a vida difícil. Mas tudo pode se transformar por meio da solidariedade e da cooperação, que traz esperança a todos e se torna o ponto de virada para uma vida melhor.​
         </p>
-        <a href="https://www.youtube.com/watch?v=tWHEPWGMDqQ" style="color: #003641; font-weight: 500;  margin-bottom: 5%;">
-          https://www.youtube.com/watch?v=tWHEPWGMDqQ
-        </a>
+        <div class="text-center"> 
+          <iframe width="80%" height="300" class="yt"
+          src="https://www.youtube.com/embed/fJY-J6UOaaE">
+          </iframe>
+        </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color:#C6D302">Fechar</button>
@@ -381,11 +386,11 @@ Fixed Navigation
 Welcome Slider
 ==================================== -->
 
-    <section style=" background: url(images/home/banner.png);background-size: cover;">
+    <section class="bg-mobile-home" style=" background: url(images/home/banner.png);background-size: cover;">
       <div class="container">
         <div class="row pt-5 pb-5">
           <div class="col-lg-12 align-self-center mb-lg-0" >
-           <h1 style="font-weight: 900;color: white; font-size: 48px; margin-top: 25%; ">Semana do<br/>Cooperativismo</h1>
+           <h1 class="bannerp bannercolor"style="font-weight: 900;color: white; font-size: 48px; margin-top: 25%; ">Semana do<br/>Cooperativismo</h1>
            <h4 style="font-weight: 900;color: #C6D302; margin-bottom: 25%;">Cooperar: poder que transforma vidas</h4>
           </div>
         </div>
@@ -520,25 +525,25 @@ Start About Section
             </div>
            <div class="col-12"> 
             <a
-            href="evento.html"
+            href="evento.html#section_target"
             style="background-color: #003641; margin: 10px; width: 85%;"
-            class="btn btn-main"
+            class="btn btn-main other-page"
             >Filantrópicas</a
           >
             <a
-            href="evento.html"
+            href="evento.html#section_target"
             style="background-color: #00ae9d; margin: 10px; width: 85%;"
             class="btn btn-main"
             >Educativas</a
           >
           <a
-          href="evento.html"
+          href="evento.html#section_target"
           style="background-color: #C6D302; margin: 10px; width: 85%;"
           class="btn btn-main"
           >Crianças e jovens</a
         >
         <a
-        href="#evento"
+         href="evento.html#section_target"
         style="background-color: #49479e; margin: 10px; width: 85%;"
         class="btn btn-main"
         >Adultos</a
@@ -902,9 +907,9 @@ alt=""
           <h1 class="header-Mobile margin-Mobile"style="color: #C6D302;  font-weight: 900; font-size: 48px;">Programação</h1>
         </div>
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-12" style="padding: 40px;">
             <!-- testimonial wrapper -->
-            <div class="testimonial-slider">
+            <div class="carousel">
               <!-- testimonial single -->
               <div class="item"  style="background-color: #003641;">
                 <div class="block" style="background-color: #003641;">
@@ -914,7 +919,7 @@ alt=""
                     <img
                     src="images/home/live_almada.png"
                     alt="logo"
-                    style="width: 80%; height: 80%; padding-bottom: 5%;"
+                    style="width: 80%; padding-bottom: 5%;"
                   />
                   <h4 style="color: white;">O Cooperativismo e a Proposta de Sociedade</h4>
                     <p style="color: white;">
@@ -952,7 +957,7 @@ alt=""
                     <img
                     src="images/home/live_espetaculo.png"
                     alt="logo"
-                    style="width: 80%; height: 80%; padding-bottom: 5%;"
+                    style="width: 80%; padding-bottom: 5%;"
                   />
                   <h4 style="color: white;">Familiarizar-te: vida, cultura e cooperação</h4>
                     <p style="color: white;">
@@ -985,7 +990,7 @@ alt=""
                     <img
                     src="images/home/junho_vermelho.png"
                     alt="logo"
-                    style="width: 80%; height: 80%; padding-bottom: 5%;"
+                    style="width: 90%; padding-bottom: 3%;"
                   />
                   <h4 style="color: white;">SICOOB PLANALTO E HEMOCENTRO BRASÍLIA</h4>
                     <p style="color: white;">
@@ -1018,7 +1023,7 @@ alt=""
                     <img
                     src="images/home/programacao_ft02.png"
                     alt="logo"
-                    style="width: 80%; height: 80%; padding-bottom: 5%;"
+                    style="width: 75%; padding-bottom: 8%;"
                   />
                   <h4 style="color: white;">SICOOB UNICOOB promove Corrida virtual</h4>
                     <p style="color: white;">
@@ -1051,7 +1056,7 @@ alt=""
                     <img
                     src="images/home/moto_sunset.png"
                     alt="logo"
-                    style="width: 80%; height: 80%; padding-bottom: 5%;"
+                    style="width: 90%; padding-bottom: 3%;"
                   />
                   <h4 style="color: white;">SICOOB CREDIMINAS faz Live Beneficente Moto Sunset 2021</h4>
                     <p style="color: white;">
@@ -1100,9 +1105,9 @@ alt=""
         <h1 class="header-card"style="color: #49479e; padding-top: 5%; font-weight: 900; font-size: 48px;">Tá na mídia</h1>
       </div>
       <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-12" style="padding: 40px;">
      
-          <div class="testimonial-slider" style="margin: 10%; margin-bottom: 0px; margin-top: 0%">
+          <div class="carousel" style="margin: 10%; margin-bottom: 0px; margin-top: 0%">
            
             <div class="item" >
               <div class="block" style="background-color: #F2F0F1;">
@@ -1425,5 +1430,36 @@ alt=""
     <script src="plugins/cookie-notice-js-master/src/cookie.notice.js"></script>
     <script src="js/util.js"></script>
     <script src="js/script.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F5X7ESRKW3"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){​​​​​​​​dataLayer.push(arguments);}​​​​​​​​
+  gtag('js', new Date());
+  gtag('config', 'G-F5X7ESRKW3');
+  </script>
+  <script>
+   $(document).ready(function(){
+    var speed = 1000;
+
+    // check for hash and if div exist... scroll to div
+    var hash = window.location.hash;
+    if($(hash).length) scrollToID(hash, speed); 
+
+    // scroll to div on nav click
+    $('.scroll-link').click(function (e) {
+        e.preventDefault();
+        var id = $(this).attr('href');
+        if($(id ).length) scrollToID(id, speed);
+    });
+})
+
+function scrollToID(id, speed) {
+    var offSet = 70;
+    var obj = $(id).offset();
+    var targetOffset = obj.top - offSet;
+    $('html,body').animate({ scrollTop: targetOffset }, speed);
+}
+    </script>
   </body>
 </html>

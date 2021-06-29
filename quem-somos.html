@@ -43,6 +43,7 @@
   </head>
 
   <body id="body">
+    <button onclick="topFunction()" id="myBtn" title="up">  <img src="images/up-arrow.png" alt="logo" style="width: 80%;"/></button>
     <!--
   Start Preloader
 
@@ -97,13 +98,15 @@ Fixed Navigation
       </div>
     </section>
     
-    <div  style="   background-image: url(images/home/bg.png);">
-      <section style=" 
-      background: url(images/sobre/banner_quemsomos2.png);background-size: cover;">
+    <div style="background-image: url(images/home/bg.png);">
+      <section 
+      class="bg-mobile-quem"
+      style=" 
+      background: url(images/sobre/banner_quemsomos2.png);background-size: 100% 100%">
         <div class="container">
-          <div class="row pt-5 pb-5">
-            <div class="col-lg-6 align-self-center mb-lg-0" >
-             <h1 class="header-Mobile"style="font-weight: 900;color:#003641; font-size: 48px; margin-top: 5%; margin-bottom: 10%;">Somos a agência de investimento social estratégico do Sicoob</h1>
+          <div class="row pt-5 pb-5 bannerp">
+            <div class="col-lg-6 mb-lg-0" >
+             <h1 class="header-Mobile bannerp "style="font-weight: 900;color:#003641; font-size: 48px; margin-top: 5%; margin-bottom: 10%;">Somos a agência de investimento social estratégico do Sicoob</h1>
              <h6 style="font-weight: 400;color: white; margin-bottom: 5%; width: 80%; ">O Instituto Sicoob tem a missão de difundir a cultura cooperativista e contribuir para o desenvolvimento das comunidades. Nós dedicamos nosso tempo em alcançar o maior número de pessoas para, juntos, promovermos um mundo mais colaborativo.</h6>
              <h6 style="font-weight: 400;color: white;  margin-bottom: 25%; width: 80%;">Foi um longo caminho até chegar aqui e, se além de fazer parte da nossa história você também quiser conhecê-la, é só<span style="color: #003641; font-weight: 900;"> rolar a página</span></h6>
             </div>
@@ -629,6 +632,7 @@ Fixed Navigation
 
     <!-- Custom js -->
     <script src="js/script.js"></script>
+    <script src="js/util.js"></script>
     
   </body>
 </html>

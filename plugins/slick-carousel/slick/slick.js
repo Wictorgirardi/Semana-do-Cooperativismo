@@ -15,6 +15,7 @@
 
  */
 /* global window, document, define, jQuery, setInterval, clearInterval */
+
 ;(function(factory) {
     'use strict';
     if (typeof define === 'function' && define.amd) {
@@ -40,12 +41,12 @@
             _.defaults = {
                 accessibility: true,
                 adaptiveHeight: false,
-                appendArrows: $(element),
                 appendDots: $(element),
                 arrows: true,
                 asNavFor: null,
-                prevArrow: '<button class="slick-prev" aria-label="Previous" type="button">Previous</button>',
-                nextArrow: '<button class="slick-next" aria-label="Next" type="button">Next</button>',
+                arrows: true,
+                prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+                nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
                 autoplay: false,
                 autoplaySpeed: 3000,
                 centerMode: false,
@@ -103,8 +104,8 @@
                 listWidth: null,
                 listHeight: null,
                 loadIndex: 0,
-                $nextArrow: null,
-                $prevArrow: null,
+                $nextArrow: true,
+                $prevArrow: true,
                 scrolling: false,
                 slideCount: null,
                 slideWidth: null,
