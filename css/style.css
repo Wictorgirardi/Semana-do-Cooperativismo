@@ -213,24 +213,27 @@ a:hover {
     width: 100% !important;
   }
   .bg-mobile-home {
-    background: url("../images/home_mobile.png") !important;
-    background-size: cover;
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("../images/home_mobile.png") !important;
+    background-size: cover !important;
+   background-repeat: no-repeat !important;
   }
   .bannercolor {
-    color: #00ae9d !important;
+    color: white !important;
   }
   
 
   .bg-mobile-evento {
     background: url("../images/evento_mobile.png") !important;
-    background-size: cover;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
   }
   .bannerp {
     margin-top: 0% !important; 
   }
   .bg-mobile-quem {
     background: url("../images/quem_somos_mobile.png") !important;
-    background-size: cover;
+    background-size: cover !important;
+   background-repeat: no-repeat !important;
   }
   .cardMobile {
     width: 84% !important;
